@@ -93,13 +93,6 @@ bot.command('help', ctx => {
     bot.telegram.sendMessage(ctx.chat.id, helpMessage)
 })
 
-bot.command('regole', ctx => {
-    ctx.deleteMessage();
-    bot.telegram.sendMessage(ctx.chat.id, `
-    Ab
-    `)
-})
-
 bot.command('reset', ctx => {
     ctx.deleteMessage();
     BestOf = 0;
